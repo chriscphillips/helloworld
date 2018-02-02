@@ -1,5 +1,9 @@
 require "sinatra"
 
 get '/' do
-	 "hello world"
+	erb :home
+end
+
+post '/name_choice' do
+  "Hello World"
 end
