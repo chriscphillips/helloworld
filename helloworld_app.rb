@@ -5,5 +5,13 @@ get '/' do
 end
 
 post '/name_choice' do
-  "Hello World"
+  fname = params[:fname]
+  redirect 'result?fname=' + fname
 end
+
+get '/result' do
+    fname = params[:fname]
+	erb :result, :locals => {:fname => fname}
+end	
+
+
