@@ -1,13 +1,15 @@
 <center>
-	
+<script src= "/js/getdate.js"> 
+</script>
+
 The name you are looking for is:
-<br>
-<br>
-<% def full_name(fname)
-   full_name = fname(fname.capitalize)
-   end 
- %>
-
-</center>
-
-
+<br><br>
+<% full_name = fname(fname.capitalize)
+if full_name == nil
+full_name = "Not Here"
+end %>
+<%= full_name %>
+<br><br>
+This is the movie they like is:
+<br><br>
+<%= fmovie %>
