@@ -1,10 +1,5 @@
 def fname(first_name)
-	name_hash = {"Susan" =>"Susan Phillips", "Jeff" => "Jeff Bess"}
+	name_hash = {"Susan" =>"Susan Phillips Movie Grease", "Jeff" => "Jeff Bess Movie IT"}
 	name_hash[first_name]
-end
-
-def film(fmovie)
-	film_hash = {"Susan" => "Grease", "Jeff" => "IT"} 
-	film_hash{fmovie}
 end
 

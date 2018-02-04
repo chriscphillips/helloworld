@@ -12,8 +12,8 @@ end
 
 get '/result' do
 	fname = params[:fname]
-	fmovie = params[:fmovie]
-	erb :result, :locals => {:fname => fname, :fmovie => fmovie}
+	film = params[:film]
+	erb :result, :locals => {:fname => fname, :film => film}
 end
 
 

@@ -1,10 +1,26 @@
 <center>
-
+<center>
+<script src= "/js/getdate.js"> 
+</script>
+<p id="date"> </p>
+<head>
+<title> Chris's Name Game</title>
+<link href="<%= url('/css/main.css') %>" rel= "stylesheet" type="text/css" />
+</head>
+<body>
+<img  alt="heart2" src="/img/heart2.png"  align="left" width="297" height="276">
+<img  alt="heart4" src="/img/heart4.png"  align="right" width="297" height="276">
+<br>
+Welcome to Hello World
+<br>
+<br><br><br>
+<br>
 Hello World
 <br>
 <br><br><br>
 <form method="post" action="name_choice">
     <input type="text"  name="fname">
+    <input type="hidden" name="film">
     <br>
     <br>
     <input type="submit">
@@ -12,3 +28,11 @@ Hello World
     <br>
     <br>
     <br>
+<img alt="heart1" src="/img/heart1.png" align="left" width="297" height="276">
+<img alt="heart3" src="/img/heart3.png"  align="right" width="297" height="276">
+</center>
+</body>
+</form>
+<script>
+	window.onload=getOrderDate('date');
+</script>
